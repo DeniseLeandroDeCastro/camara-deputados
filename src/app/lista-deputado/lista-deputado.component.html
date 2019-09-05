@@ -1,0 +1,43 @@
+<nav class="navbar navbar-dark text-white" style="background-color: #4682B4;">
+  <h2>Câmara dos Deputados - Dados Abertos</h2>
+</nav>
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <div *ngFor="let d of deputados" style="text-align: center">
+      <div class="card mb-3" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <img src="{{d.urlFoto}}" class="card-img-top" alt="Foto do Deputado">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                  <h4 class="card-title">{{d.nome}}</h4>
+                  <h5 class="card-text">{{d.siglaUF}}</h5>
+                  <h5 class="card-text">{{d.email}}</h5>
+                  <h5 class="card-text">{{d.id}}</h5>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+
+<!--
+<form #dep="ngForm">
+  <label for="id">ID</label>
+  <input id="id" type="number" name="id" [(ngModel)]="id" #idp
+</form>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
